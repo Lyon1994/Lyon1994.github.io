@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Joker Windows Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link id="mdl_css" href="mdl/material.min.css" rel="stylesheet" />
+<script id="mdl_js" src="mdl/material.min.js"></script>
+<link rel="stylesheet" href="mdi/material-icons.css">
+<script src="js/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+	<!-- Always shows a header, even in smaller screens. -->
+	<div
+		class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+		<header class="mdl-layout__header mdl-layout__header--scroll">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">开发者应用商店</span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation. We hide it in small screens. -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<!-- 这里填写选项 -->
+				</nav>
+			</div>
+			<!-- Tabs -->
+			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+				<!-- 这里填写选项 -->
+				<a class="mdl-layout__tab  is-active" href="#main_page">主页</a><a
+					class="mdl-layout__tab " href="#application_page">应用</a><a
+					class="mdl-layout__tab " href="#game_page">游戏</a>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">菜单</span>
+			<nav class="mdl-navigation">
+				<!-- 这里填写菜单 -->
+			</nav>
+		</div>
+		<main class="mdl-layout__content">
+		<section class="mdl-layout__tab-panel is-active" id="main_page">
+			<div class="page-content">
+				<!-- Your content goes here -->
+				<!-- <div id="app_news_list"
+					class="app_layout_center mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">新闻动态</h2>
+					</div>
+					<div class="mdl-card__supporting-text"></div>
+					<div class="mdl-card__actions mdl-card--border">
+						<a
+							class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							更多 </a>
+					</div>
+				</div>
+				<div id="app_ranking_list"
+					class="app_layout_center mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">排行榜</h2>
+					</div>
+					<div class="mdl-card__supporting-text"></div>
+					<div class="mdl-card__actions mdl-card--border">
+						<a
+							class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							更多 </a>
+					</div>
+				</div> -->
+				<!-- Square card -->
+				<style>
+.demo-card-square.mdl-card {
+	width: 384px;
+	height: 640px;
+}
+
+.demo-card-square>.mdl-card__title {
+	color: #fff;
+	background: url('./img/43830_768_1280.jpg') bottom
+		no-repeat #46B6AC;
+	filter:
+		"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+</style>
+				<div class="app_layout_center demo-card-square mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title mdl-card--expand">
+						<h2 class="mdl-card__title-text">Sunshine</h2>
+					</div>
+					<div class="mdl-card__supporting-text">The picture to test application.</div>
+					<div class="mdl-card__actions mdl-card--border">
+						<a
+							class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://lyon-yan.lofter.com/">
+							My Blog </a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="mdl-layout__tab-panel" id="application_page">
+			<div class="page-content">
+				<!-- Your content goes here -->
+			</div>
+		</section>
+		<section class="mdl-layout__tab-panel" id="game_page">
+			<div class="page-content">
+				<!-- Your content goes here -->
+			</div>
+		</section>
+		</main>
+	</div>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
