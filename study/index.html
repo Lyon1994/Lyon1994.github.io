@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<script>
+			var str = "<p>abc<span><b>xxx</b></span><span>123</span><b>456</b></p>";
+			alert(getValue(str));
+
+			function getValue(str) {
+				var root = document.createElement("root");
+				root.innerHTML = str;
+				return replaces(root);
+			}
+
+			function replaces(node) {
+				var value = "";
+				value += "[";
+				var l = node.childNodes.length;
+				for (var i = 0; i < l; i++) {
+					var temp = node.childNodes[i];
+					if (temp.nodeName != "#text") {
+						//					alert(temp.value);
+						if (temp.nodeName != "P") {
+							value += "{tag:\"" + temp.nodeName + "\",value:";
+						}
+						if (temp.childElementCount > 0) {
+							value += replaces(temp);
+						} else {
+							value += "\"" + temp.innerText + "\"";
+						}
+						if (temp.nodeName != "P") {
+							value += "}";
+						}
+					} else {
+						value += "\"" + temp.textContent + "\"";
+					}
+					if (i < l - 1) {
+						value += ",";
+					}
+				}
+				value += "]";
+				return value;
+			}
+		</script>
+	</body>
+
+</html>
