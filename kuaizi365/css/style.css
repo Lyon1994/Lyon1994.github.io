@@ -1,0 +1,46 @@
+*{margin: 0;padding: 0;}
+ul{	list-style: none;}
+a{text-decoration: none;}
+html{font-size:62.5%;}
+body{max-width: 640px;margin: 0 auto;font-size:16px;font-size:1.6rem; background-color:#f0f0f0}
+img{max-width: 100%; border:none}
+.swiper-container{	width: 100%;}
+.swiper-pagination-bullet-active{background: #fff;}
+.swiper-pagination-bullet{width: 6px;height: 6px;}
+.swiper-container-horizontal>.swiper-pagination{bottom:5px}
+.index_nav a{width:7rem; height:7rem; margin:0 0.6rem 0.5rem 0.6rem ;border-radius:50%;color:#fff; display: inline-block; text-align:center;}
+.index_nav span{line-height:2rem; display:block; padding-top:20%}
+.index_nav div{ padding-top:0.5rem}
+.index_nav .color_1{ background-color:#84ccc9}
+.index_nav .color_2{ background-color:#f19ec2}
+.index_nav .color_3{ background-color:#f6b37f}
+.index_nav .color_4{ background-color:#8f82bc}
+.index_nav .color_5{ background-color:#88abda}
+.index_nav .color_6{ background-color:#ffcc33}
+.index_nav .color_7{ background-color:#cfa972}
+.index_nav .color_8{ background-color:#f29c9f}
+.index_nav{	width:100%;overflow: hidden; text-align: center; background:#fff}
+
+
+.title_blue,.title_brown,.title_green,.title_red{ clear:both; margin-bottom:0.5rem}
+.title_blue .nav_title{ position:relative; width:100%;height:1.5rem; border-bottom:1px solid #66cccc}
+.title_blue .nav_title h4{ position: absolute; left:35%; top:45%; width:30%; color:#66cccc; text-align:center; height:2rem; line-height:2rem; background:#f0f0f0; border-left:0.3rem solid #66cccc;border-right:0.3rem solid #66cccc}
+.ul_three{ margin-top:1.5rem; background:#fff; overflow:hidden}
+.title_blue .ul_three .li1,.title_brown .ul_three .li1{ width:49%; border-right:1px solid #f0f0f0; float:left; overflow: hidden; }
+.title_blue .ul_three .li2,.title_brown .ul_three .li2{ width:50%;border-bottom:1px solid #f0f0f0; float:left;overflow: hidden; }
+.title_blue .ul_three .li3,.title_brown .ul_three .li3{ width:50%;float:left;background:#fff; }
+.title_brown .nav_title{ position:relative; width:100%;height:1.5rem; border-bottom:1px solid #cc9900}
+.title_brown .nav_title h4{ position: absolute; left:37%; top:45%; width:30%; color:#cc9900; text-align:center; height:2rem; line-height:2rem; background:#f0f0f0; border-left:0.3rem solid #cc9900;border-right:0.3rem solid #cc9900}
+
+.title_green .nav_title{ position:relative; width:100%;height:1.5rem; border-bottom:1px solid #009900}
+.title_green .nav_title h4{ position: absolute; left:35%; top:45%; width:30%; color:#009900; text-align:center; height:2rem; line-height:2rem; background:#f0f0f0; border-left:0.3rem solid #009900;border-right:0.3rem solid #009900}
+.title_green .ul_three .li1{ width:33%;  float:left; overflow: hidden; }
+.title_green .ul_three .li2{ width:33%;border-left:1px solid #f0f0f0; border-right:1px solid #f0f0f0; float:left;overflow:hidden; }
+
+.title_red .nav_title{ position:relative; width:100%;height:1.5rem; border-bottom:1px solid #ff3300}
+.title_red .nav_title h4{ position: absolute; left:35%; top:45%; width:30%; color:#ff3300; text-align:center; height:2rem; line-height:2rem; background:#f0f0f0; border-left:0.3rem solid #ff3300;border-right:0.3rem solid #ff3300}
+.title_red .ul_three .li1{ width:50%; float:left; overflow: hidden; }
+.title_red .ul_three .li2{ width:49.7%;border-left:1px solid #f0f0f0;  float:left;overflow:hidden; }
+
+
+
