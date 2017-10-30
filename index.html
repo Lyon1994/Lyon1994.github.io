@@ -1,3 +1,27 @@
+<html>
+<head></head>
+<body>
+
 hello world
 <h1>这是一个测试！</h1>
 <h1>这是一个测试！</h1>
+<input type="submit" style="width:100px;height:100px" onClick="saveAndBack()">close current page</button>
+<script>
+
+
+/**
+* by yanning
+*/
+function saveAndBack(){
+    if(window.fonesoft){//执行android
+        window.fonesoft.saveAndBack();
+    }else{//执行ios
+        window.webkit.messageHandlers.saveAndBack.postMessage(null);
+    }
+}
+
+</script>
+</body>
+
+</html>
+
