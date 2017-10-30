@@ -13,6 +13,8 @@ hello world
 * by yanning
 */
 function saveAndBack(){
+        window.webkit.messageHandlers.saveAndBack.postMessage(null);
+
     if(window.fonesoft){//执行android
         window.fonesoft.saveAndBack();
     }else{//执行ios
